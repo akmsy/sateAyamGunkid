@@ -207,6 +207,7 @@ section h2 {
   background-color: white;
   padding: 14px 16px;
   border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
 .step-prepare::before {
@@ -214,7 +215,7 @@ section h2 {
   width: 30px;
   height: 30px;
   background-color: green;
-  color: #fff; /* angka putih */
+  color: #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
