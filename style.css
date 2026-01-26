@@ -45,6 +45,15 @@ header img {
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+  header {
+    margin-bottom: 32px;
+    padding: 50px;
+    background-image: linear-gradient(rgba(1, 73, 4, 0.9)), url("https://images.unsplash.com/photo-1603088549155-6ae9395b928f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+  }
+}
+
 /* ===== META ===== */
 .food-meta,
 .meta-item {
@@ -95,6 +104,7 @@ section h2 {
 .about-content p {
   flex: 1;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .about-content img {
