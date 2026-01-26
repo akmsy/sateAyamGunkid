@@ -1,2 +1,2 @@
 # sateAyamGunkid
-learning webpages
+learning web static
