@@ -1,0 +1,256 @@
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background-color: #f2fff1;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+
+/* ===== HEADER ===== */
+header {
+    margin-bottom: 32px;
+    padding: 100px;
+    background-image: linear-gradient(rgba(1, 73, 4, 0.9)), url("https://images.unsplash.com/photo-1603088549155-6ae9395b928f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+}
+
+header img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.food-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 12px 0;
+  color: white;
+}
+
+.food-description {
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* ===== META ===== */
+.food-meta,
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+
+.food-meta {
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.meta-item svg {
+  color: #8fd33d;
+}
+
+.rating-star svg {
+  fill: #facc15;
+  stroke: #facc15;
+}
+
+/* ===== MAIN ===== */
+main {
+  max-width: 900px;
+  margin: 0 auto 80px;
+  padding: 0 16px;
+}
+
+section {
+  margin-top: 64px;
+}
+
+section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+}
+
+/* ===== TRADITIONAL LABEL ===== */
+.traditional-recipe {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: #d6f0dd;
+  color: green;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+/* ===== NUTRITION ===== */
+.nutritional-information-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.card-nutritional {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.card-nutritional-information {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.card-nutritional-information span {
+  font-weight: 100;
+  color: #6b7280;
+  margin-top: 8px;
+  display: block;
+}
+
+/* ===== CIRCLE ICON (WARNA-WARNI) ===== */
+.circle-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  color: #ffffff;
+}
+
+.card-nutritional-information:nth-child(1) .circle-icon {
+  background: rgb(255, 172, 172);
+}
+
+.card-nutritional-information:nth-child(2) .circle-icon {
+  background: lightgreen;
+}
+
+.card-nutritional-information:nth-child(3) .circle-icon {
+  background: lightblue;
+}
+
+.card-nutritional-information:nth-child(4) .circle-icon {
+  background: rgb(250, 205, 123);
+}
+
+/* ===== INGREDIENTS ===== */
+.detail-ingredients {
+  display: grid;
+  gap: 20px;
+}
+
+.checklist-ingredients {
+  background: #ffffff;
+  padding: 14px 16px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.checklist-ingredients p {
+  flex: 1;
+  font-weight: 500;
+}
+
+.checklist-ingredients span {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* === HOW TO PREPARE === */
+.how-to-prepare {
+  margin-top: 40px;
+}
+
+.detail-prepare {
+  counter-reset: step;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.step-prepare {
+  counter-increment: step;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background-color: white;
+  padding: 14px 16px;
+  border-radius: 14px;
+}
+
+.step-prepare::before {
+  content: counter(step);
+  min-width: 30px;
+  height: 30px;
+  background-color: green;
+  color: #fff; /* angka putih */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.step-prepare p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+
+/* ===== GALLERY ===== */
+.gallery {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.gallery img {
+    display: flex;
+    padding: 10px;
+}
+
+
+/* ===== CHEF TIPS ===== */
+.chef-tips {
+    background:linear-gradient(135deg, #279300, #135501);
+    padding: 50px;
+    border-radius: 14px;
+}
+.chef-tips h3 {
+  margin-top: 20px;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+.chef-tips h2, .chef-tips p{
+    color: white;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  height: 80px;
+}
