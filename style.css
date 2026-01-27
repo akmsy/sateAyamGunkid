@@ -117,7 +117,7 @@ section h2 {
 
 @media (max-width: 768px) {
   .about-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .about-content img {
