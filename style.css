@@ -43,6 +43,7 @@ header img {
 .food-description {
   color: white;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 @media (max-width: 768px) {
@@ -270,6 +271,7 @@ section h2 {
 .step-prepare p {
   margin: 0;
   line-height: 1.6;
+  text-align: justify;
 }
 
 /* ===== GALLERY ===== */
@@ -299,7 +301,7 @@ section h2 {
 /* ===== CHEF TIPS ===== */
 .chef-tips {
   background:linear-gradient(135deg, #279300, #135501);
-  padding: 50px;
+  padding: 40px;
   border-radius: 14px;
 }
 .chef-tips h3 {
@@ -310,6 +312,10 @@ section h2 {
 
 .chef-tips h2, .chef-tips p{
   color: white;
+}
+
+.chef-tips p {
+  text-align: justify;
 }
 
 /* ================= FOOTER CONTACT ================= */
