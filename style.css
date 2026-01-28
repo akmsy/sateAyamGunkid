@@ -452,6 +452,26 @@ footer .contact {
   cursor: pointer;
 }
 
+@media (max-width: 900px) {
+
+  .phone-number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .phone-number select {
+    width: 100px;
+  }
+
+  /* phone input */
+  .phone-number input {
+    flex: 1;
+    padding: 14px 16px;
+    border-radius: 14px;
+    font-size: 0.85rem;
+  }
+}
+
 /* ================= BUTTON ================= */
 .contact-form button {
   margin-top: 10px;
