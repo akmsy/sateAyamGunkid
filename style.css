@@ -273,14 +273,16 @@ section h2 {
 }
 
 /* ===== GALLERY ===== */
-.gallery {
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+.img-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 16px;
 }
 
 .gallery img {
-  display: flex;
-  padding: 10px;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
 }
 
 /* ===== CHEF TIPS ===== */
@@ -470,5 +472,157 @@ footer .contact {
 
   .form-group select {
     max-width: 100%;
+  }
+}
+
+/* ANIMASI */
+
+* {
+  scroll-behavior: smooth;
+}
+
+section {
+  animation: fadeUp 0.8s ease both;
+}
+
+header {
+  animation: headerFade 1s ease forwards;
+}
+
+.food-title {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.food-description {
+  animation: fadeUp 0.9s ease forwards;
+}
+
+.meta-item {
+  animation: fadeUp 0.6s ease both;
+}
+
+.food-meta .meta-item:nth-child(1) { animation-delay: .2s; }
+.food-meta .meta-item:nth-child(2) { animation-delay: .3s; }
+.food-meta .meta-item:nth-child(3) { animation-delay: .4s; }
+
+.traditional-recipe {
+  animation: popIn 0.6s ease forwards;
+}
+
+.traditional-recipe:hover {
+  transform: scale(1.05);
+}
+
+.card-nutritional-information {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-nutritional-information:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.circle-icon {
+  transition: transform 0.4s ease;
+}
+
+.card-nutritional-information:hover .circle-icon {
+  transform: rotate(8deg) scale(1.1);
+}
+
+.checklist-ingredients {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.checklist-ingredients:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+.checklist-ingredients svg {
+  transition: transform 0.3s ease;
+}
+
+.checklist-ingredients:hover svg {
+  transform: scale(1.15);
+}
+
+.step-prepare {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.step-prepare:hover {
+  transform: translateX(8px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+.step-prepare::before {
+  transition: transform 0.3s ease;
+}
+
+.step-prepare:hover::before {
+  transform: scale(1.15);
+}
+
+.gallery img {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+}
+
+.chef-tips {
+  animation: fadeUp 0.9s ease forwards;
+}
+
+.form-group input:hover,
+.form-group textarea:hover,
+.form-group select:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes headerFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes addScroll {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
