@@ -317,6 +317,7 @@ footer {
   background: linear-gradient(180deg, rgba(1, 73, 4, 0.9), #020617);
   padding: 40px 0 60px;
   color: #e5e7eb;
+  justify-content: space-between;
 }
 
 footer .contact {
@@ -420,6 +421,16 @@ footer .contact {
   gap: 10px;
 }
 
+.phone-number {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+
+.phone-number input {
+  flex: 1;
+}
+
 .form-group input,
 .form-group textarea,
 .form-group select {
@@ -452,13 +463,14 @@ footer .contact {
   cursor: pointer;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 723px) {
 
   .phone-number {
     display: flex;
     align-items: center;
     gap: 10px;
   }
+
   .phone-number select {
     width: 100px;
   }
@@ -491,7 +503,7 @@ footer .contact {
 }
 
 /* ================= RESPONSIVE ================= */
-@media (max-width: 900px) {
+@media (max-width: 723px) {
   footer .contact {
     grid-template-columns: 1fr;
   }
