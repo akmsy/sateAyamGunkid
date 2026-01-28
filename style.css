@@ -285,6 +285,17 @@ section h2 {
   object-fit: cover;
 }
 
+@media (max-width: 480px) {
+  .img-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+
+  .img-gallery img {
+    height: 200px;
+  }
+}
+
 /* ===== CHEF TIPS ===== */
 .chef-tips {
   background:linear-gradient(135deg, #279300, #135501);
