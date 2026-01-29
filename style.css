@@ -323,7 +323,6 @@ footer {
   background: linear-gradient(180deg, rgba(1, 73, 4, 0.9), #020617);
   padding: 40px 0 60px;
   color: #e5e7eb;
-  justify-content: space-between;
 }
 
 footer .contact {
@@ -332,7 +331,7 @@ footer .contact {
   padding: 0 24px;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: 70px;
+  gap: 25px;
   align-items: flex-start;
 }
 
@@ -346,7 +345,7 @@ footer .contact {
 
 .detail-contact p {
   color: #cbd5f5;
-  margin-bottom: 28px;
+  margin-bottom: 15px;
   max-width: 520px;
   line-height: 1.8;
 }
