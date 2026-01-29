@@ -148,7 +148,7 @@ section h2 {
 
 .card-nutritional {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   gap: 20px;
 }
 
@@ -563,7 +563,6 @@ header {
 
 .card-nutritional-information:hover {
   transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
 }
 
 .circle-icon {
