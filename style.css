@@ -670,3 +670,30 @@ header {
     transform: translateY(0);
   }
 }
+
+.reveal {
+  filter: blur(4px);
+}
+
+.reveal.sr-is-revealed {
+  filter: blur(0);
+  transition: filter 0.8s ease;
+}
+
+.pop-in {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: 
+    opacity 0.4s ease,
+    transform 0.4s cubic-bezier(.4,0,.2,1);
+}
+
+.pop-in.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.pop-in.delay-1 { transition-delay: 0.1s; }
+.pop-in.delay-2 { transition-delay: 0.3s; }
+.pop-in.delay-3 { transition-delay: 0.5s; }
+.pop-in.delay-4 { transition-delay: 0.6s; }
